@@ -1,0 +1,138 @@
+index.html
+
+<head>
+	<link rel="stylesheet" type="text/css" href="sass/main.css">
+</head>
+
+<body>
+	<svg class="element">
+	  <circle cx="100" cy="75" r="75" fill="#204056" />
+	</svg>
+
+	<div class="slide-left">
+	  <svg id="sass-logo" data-name="Layer 14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98.05 89.67"><defs><style>.cls-1{fill:#3f51a3;}</style></defs><title>icon-sass</title><polygon class="cls-1" points="50.59 54.16 50.59 54.17 50.6 54.16 50.59 54.16"/><polygon points="98.05 28.3 98.05 23.68 79.32 34.49 81.32 37.96 92.05 31.76 92.05 44.75 68.66 58.26 68.66 65.18 98.05 48.22 98.05 46.51 98.05 46.51 98.05 28.3 98.05 28.3"/><path d="M66.78,56.28l-1.07-1.86h0l-0.53-.92-6.3,3.64h0l-6,3.46v0h0V90.81l10.82-6.2v2.33l6-3.46V54.61ZM58.87,82.75v-21L62,60l1.71,3V80Z" transform="translate(-20.14 -19.43)"/><path d="M79,29.29V19.44H56.54l-36.4,21h0V47.6h0v6.93L41.79,67,21.31,78.84v6.92h0v9.51h0v13.82l27-15.6V67.87l2.35-1.36V61.89l-2.9,1.67L26.15,51.07V43.91l32-18.49H73v7.33L52.87,44.4v6.93L79.05,36.21V29.28h0ZM42.33,92.34l-15,8.67V80l15-8.67v21Z" transform="translate(-20.14 -19.43)"/><polygon points="58.09 35.92 58.09 26.55 52.09 30.02 52.09 37.49 60.99 52.89 60.99 52.89 56.66 55.39 54.09 50.93 54.09 56.85 54.08 56.85 54.08 61.43 68.16 53.3 58.09 35.92"/><polygon points="82.7 44.91 72.63 27.5 72.63 18.16 66.63 21.62 66.63 29.09 75.52 44.47 71.19 46.97 68.62 42.52 68.62 50.29 68.62 50.29 68.62 53.04 82.7 44.91"/></svg>
+	  
+	  <h3>Make Sass come alive </h3>
+	</div>
+</body>
+
+main.css
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+body {
+  padding-top: 5%;
+  background-color: #F1F2F3;
+}
+
+.slide-left {
+  position: relative;
+  left: 50%;
+  animation: slide-left 5s;
+  -webkit-animation: slide-left 5s;
+}
+
+h3 {
+  color: #204056;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.183em;
+  line-height: 1.4;
+  position: relative;
+  padding-top: 2%;
+  left: -6.3%;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes slide-left {
+  from {
+    left: 20%;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+circle {
+  opacity: 1;
+}
+
+.element {
+  position: absolute;
+  top: 15%;
+  left: 46%;
+  animation-name: appear;
+  animation-duration: 4s;
+}
+
+#sass-logo {
+  width: 100px;
+  fill: white;
+}
+
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+main.scss
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import "helper/variables";
+@import "helper/animations";
+@import "helper/placeholders";
+
+body {
+  padding-top: 5%;
+  background-color: #F1F2F3;
+}
+
+@mixin slide-left{
+  animation: slide-left 5s;
+  -webkit-animation: slide-left 5s;
+}
+
+.slide-left {
+  position: relative;
+  left: 50%;
+  @extend %slide-left;
+}
+
+h3 {
+  color: $blue;
+  font-family: $slogan-font;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: $slogan-spacing;
+  line-height: 1.4;
+  position: relative;
+  padding-top: 2%;
+  left: -6.3%;  
+}
+
+/* Chrome, Safari, Opera */
+
+
+circle {
+  opacity: 1;
+}
+
+.element {
+  position: absolute;
+  top: 15%;
+  left: 46%;
+  animation-name: appear;
+  animation-duration: 4s;
+}
+
+#sass-logo {
+  width: 100px;
+  fill: white;
+}
+
