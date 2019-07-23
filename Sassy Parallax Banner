@@ -1,0 +1,84 @@
+index.html
+
+<head>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+
+<div id="landscape">
+  <h1 class="title">Visit Myanmar</h1>
+</div>
+
+<p>
+  Descriptions to come. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consectetur, libero eget bibendum elementum, lorem orci rutrum justo, at fermentum neque felis ac ex. Phasellus suscipit dapibus ante, eu sodales risus sagittis ut. Phasellus eget augue purus. Sed eget auctor felis, egestas vestibulum augue. Aenean pharetra metus quis orci consequat dapibus. Integer aliquam aliquet ipsum ut pellentesque. Curabitur cursus, nibh ut vehicula maximus, eros libero pretium diam, eu luctus nisl mauris a augue. Nulla luctus in orci non vulputate. Suspendisse at tortor elit.
+</p>
+
+<div id="monkeys">
+  <h1 class="title">Book my trip now</h1>
+</div>
+
+</body>
+
+
+main.css
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+  color: #2e3738;
+}
+
+#landscape,
+#monkeys {
+  width: 100%;
+  height: 100vh;
+  perspective: 1px;
+  transform: translateZ(-1px);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#landscape h1,
+#monkeys h1 {
+  text-transform: uppercase;
+  font-family: 'Bitter', serif;
+  letter-spacing: 0.06em;
+  font-size: 120px;
+  color: #FFF;
+  opacity: 0.7;
+  text-align: center;
+}
+
+p {
+  width: 70%;
+  padding: 5%;
+  margin: 0px auto;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 1.4;
+}
+
+main.scss
+
+<head>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+
+<div id="landscape">
+  <h1 class="title">Visit Myanmar</h1>
+</div>
+
+<p>
+  Descriptions to come. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consectetur, libero eget bibendum elementum, lorem orci rutrum justo, at fermentum neque felis ac ex. Phasellus suscipit dapibus ante, eu sodales risus sagittis ut. Phasellus eget augue purus. Sed eget auctor felis, egestas vestibulum augue. Aenean pharetra metus quis orci consequat dapibus. Integer aliquam aliquet ipsum ut pellentesque. Curabitur cursus, nibh ut vehicula maximus, eros libero pretium diam, eu luctus nisl mauris a augue. Nulla luctus in orci non vulputate. Suspendisse at tortor elit.
+</p>
+
+<div id="monkeys">
+  <h1 class="title">Book my trip now</h1>
+</div>
+
+</body>
+
