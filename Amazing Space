@@ -1,0 +1,151 @@
+index.html
+
+<html>
+<head>
+  <title>Amazing Space</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+  <body>
+    <header>
+    <h1 class="page-title">Amazing Space</h1>
+  </header>
+  <div class="main">
+    <p class="company-description">
+      Otherworldly views, uncompromising service, unparallelled luxury. This is Amazing Space, the world's first, and finest, space adventure company. With private and group voyages embarking weekly, you can book your tickets in advance or on the fly. At Amazing Space, there's always space for you &trade;.
+    <a class="learn-more" href="#">Learn More >></a>
+    </p>
+    <div class="space-container">
+      <figure class="space-item">
+        <img class="thumbnail" src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/space01.jpg">
+      </figure>
+      <figure class="space-item">
+        <img class="thumbnail" src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/space02.jpg">
+      </figure>
+      <figure class="space-item">
+        <img class="thumbnail" src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/space03.jpg">
+      </figure>
+      <figure class="space-item">
+        <img class="thumbnail" src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/space04.jpg">
+      </figure>
+      <figure class="space-item">
+        <img class="thumbnail" src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/space05.jpg">
+      </figure>
+      <figure class="space-item">
+        <img class="thumbnail" src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/space06.jpg">
+      </figure>
+      <figure class="space-item">
+        <img class="thumbnail" src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/space07.jpg">
+      </figure>
+      <figure class="space-item">
+        <img class="thumbnail" src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/space08.jpg">
+      </figure>
+    </div>
+  </div>
+  <nav class="footer">
+    <ul>
+      <li>ABOUT</li>
+      <li>MISSIONS</li>
+      <li>ARCHIVE</li>
+    </ul>
+    <div class="contact-btn">
+      <a>CONTACT US</a>
+    </div>
+  </nav>
+  </body>
+</html>
+
+style.css
+
+html, body {
+  min-height: 100%;
+  font-weight: 300;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 20px 0 0 0;
+}
+
+.page-title {
+  text-align: center;
+  font-weight: inherit;
+}
+
+.main {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+}
+
+.company-description {
+  font-size: 0.8rem;
+  border: 2px solid #ffffff;
+  padding: 30px;
+}
+
+.learn-more {
+  color: #0071BC;
+  text-decoration: none;
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.space-container {
+
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center
+}
+
+.space-item {
+  flex: 1;
+  flex-basis: 25%;
+  margin: 20px;
+
+}
+
+.space-item .thumbnail {
+  width: 100%;
+  height: auto;
+  border: 2px solid #ffffff;
+}
+
+/* FOOTER NAVIGATION */
+
+nav {
+  margin-top: 30px;
+  font-size: 0.70em;
+}
+
+nav ul {
+  display: inline;
+}
+
+nav li {
+
+  margin: 0 20px 0 0;
+  display: inline;
+}
+
+nav a {
+  line-height: 60px;
+  border: 0.75px solid #000000;
+  padding: 7px;
+  border-radius: 10px;
+  color: #204156;
+  text-decoration: none;
+}
+
+.contact-btn {
+  cursor: pointer;
+  margin: -23px 30px 0 0;
+	float: right;
+}
+
+.contact-btn a:active {
+	position: relative;
+  top: 3px;
+}
